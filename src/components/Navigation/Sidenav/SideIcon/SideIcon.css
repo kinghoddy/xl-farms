@@ -1,0 +1,17 @@
+.list_group_item {
+    background: none;
+    font-size: 1.3rem;
+    transition: background 0.2s ease-in;
+    font-weight: 600;
+    height: 3.6rem;
+    color: orangered;
+    display: flex;
+    align-items: center;
+}
+
+.list_group_item.active,
+.list_group_item:hover {
+    background: #000;
+    border: 0;
+    color: orange;
+}

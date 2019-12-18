@@ -1,0 +1,21 @@
+.Toolbar img {
+    height: 2.6rem;
+}
+
+.Toolbar .brand {
+    align-items: center;
+}
+
+.Toolbar span {
+    line-height: 1 !important;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 400;
+
+    padding: 0;
+    display: block
+}
+
+.Toolbar .user {
+    margin: 0 1rem;
+}

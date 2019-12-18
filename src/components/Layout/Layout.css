@@ -1,0 +1,10 @@
+.Content {
+    padding-top: 4.3rem;
+    flex: 1;
+    height: 100vh;
+    overflow: auto;
+}
+
+.wrapper {
+    display: flex;
+}
