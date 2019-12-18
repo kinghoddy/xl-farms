@@ -18,7 +18,7 @@ class Dashboard extends Component {
                         header="expenditure"
                         body="$12.99"
                         icon="phone"
-                        footer="expenditure account"
+                        footer="factory account"
                     />
                     <Card
                         header="expenditure"
