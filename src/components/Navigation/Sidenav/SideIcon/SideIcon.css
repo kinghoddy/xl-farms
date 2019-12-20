@@ -1,17 +1,35 @@
 .list_group_item {
     background: none;
-    font-size: 1.3rem;
     transition: background 0.2s ease-in;
     font-weight: 600;
-    height: 3.6rem;
-    color: orangered;
+    width: 4.2rem;
+    color: rgb(255, 113, 0);
+    height: 3.5rem;
     display: flex;
     align-items: center;
 }
 
-.list_group_item.active,
+.list_group_item i,
+.list_group_item {
+    font-size: 2rem !important;
+}
+
+.active,
 .list_group_item:hover {
     background: #000;
     border: 0;
     color: orange;
+}
+
+.active:after,
+.list_group_item:hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    visibility: visible;
+    left: 0;
+    background: rgb(255, 113, 0);
+    height: 100%;
+    width: .4rem
 }

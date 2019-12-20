@@ -1,3 +1,8 @@
+.Toolbar {
+    height: 4.2rem;
+    border-bottom: 1px solid rgb(228, 232, 255)
+}
+
 .Toolbar img {
     height: 2.6rem;
 }
@@ -6,15 +11,17 @@
     align-items: center;
 }
 
-.Toolbar span {
-    line-height: 1 !important;
-    text-align: center;
+.Toolbar p {
+    font-size: 1.6rem !important;
     font-family: cursive;
-    font-weight: 400;
-
-    padding: 0;
-    display: block
+    line-height: .8;
+    margin: 0 1rem
 }
+
+.Toolbar p span {
+    font-size: 1rem
+}
+
 
 .Toolbar .user {
     margin: 0 1rem;

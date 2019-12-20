@@ -1,17 +1,13 @@
 .list_group_item {
-    background: none;
-    font-size: 1.3rem;
-    transition: background 0.2s ease-in;
-    font-weight: 600;
-    height: 3.6rem;
     display: flex;
-    color: #555;
+    background: none;
+    height: 3.5rem;
     align-items: center;
 }
 
-.list_group_item.active,
+.active,
 .list_group_item:hover {
-    background: #000;
-    border: 0;
-    color: #fff
+    background: #222 !important;
+    border: 0 !important;
+    color: white !important;
 }

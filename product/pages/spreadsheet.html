@@ -1,0 +1,102 @@
+<style>
+  table,
+  th,
+  tfoot,
+  td {
+    padding: 0 !important;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  th,
+  tfoot,
+  td {
+    padding: 0.5rem 0.3rem !important;
+  }
+
+  input,
+  select {
+    width: 3rem;
+    border: none;
+    background: none;
+  }
+
+  tfoot * {
+    font-size: 1.2rem
+  }
+
+  .spreadsheet {
+    /* box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2); */
+  }
+</style>
+
+<nav class="spreadsheet navbar  bg-dark  navbar-dark">
+  <div class="container text-white">
+    <a href="#dashboard" class="btn btn-outline-light"><i class="fa fa-angle-left"></i> Previous</a>
+    <p class=" mb-0 text-uppercase">
+      <span class="h5 font-weight-bold">New Report </span><span id="date" class="h5 mx-3"></span>
+    </p>
+
+    <a href="#summary" class="btn btn-outline-light">Next <i class="fa fa-angle-right"></i></a>
+  </div>
+</nav>
+<div class="container-fluid ">
+  <div class="table-responsive ">
+    <table class="table table-bordered table-condensed table-hover">
+      <thead>
+        <tr>
+          <th rowspan="2">S/N</th>
+          <th rowspan="2">PRODUCT</th>
+          <th rowspan="2">Opening</th>
+          <th rowspan="2">Received</th>
+          <th rowspan="2">Total</th>
+          <th colspan="2">Sales</th>
+          <th rowspan="2">Induction</th>
+          <th colspan="2">Unilevel</th>
+          <th rowspan="2">Stepout</th>
+          <th colspan="2">Superdealers</th>
+          <th rowspan="2">Bonus</th>
+          <th rowspan="2">Food Salary</th>
+          <th colspan="2">Ember</th>
+          <th rowspan="2">Closing</th>
+        </tr>
+        <tr>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="tbody" class="wow fadeInUp "></tbody>
+      <tfoot id="tfoot" class=" bg-light">
+        <tr>
+          <td></td>
+          <td>
+            <h4 class="m-0">Total:</h4>
+          </td>
+          <td id="opening_sum">0</td>
+          <td id="received_sum">0</td>
+          <td id="total_sum">0</td>
+          <td id="salesPrice_sum">0</td>
+          <td id="salesQuantity_sum">0</td>
+          <td id="salesInduction_sum">0</td>
+          <td id="unilevelPrice_sum">0</td>
+          <td id="unilevelQuantity_sum">0</td>
+          <td id="unilevelStepOut_sum">0</td>
+          <td id="_sum">0</td>
+          <td id="_sum">0</td>
+          <td id="_sum">0</td>
+          <td id="_sum">0</td>
+          <td id="_sum">0</td>
+          <td id="_sum">0</td>
+          <td id="_sum">0</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <div class="loading"></div>
+</div>
