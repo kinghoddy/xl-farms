@@ -11,7 +11,9 @@ class App extends Component {
             <BrowserRouter>
                 <div className="App">
                     <Layout>
-                        <Route path="" />
+                        <Route path="/" exact gid render={() => (
+                            <Dashboard />
+                        )} />
                     </Layout>
                 </div>
             </BrowserRouter>
