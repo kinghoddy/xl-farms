@@ -1,14 +1,25 @@
-.Sidenav {
-    background: #fff;
+.Sidenav,
+.SideIcons {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    padding-top: 4rem;
+    top: 0;
+    margin-left: -13rem;
     -webkit-transition: margin .25s ease-out;
     -moz-transition: margin .25s ease-out;
-    z-index: 200;
-    position: fixed;
-    top: 0;
-    height: 100vh;
     -o-transition: margin .25s ease-out;
-    color: #555;
     transition: margin .25s ease-out;
+    background: white
+}
+
+.list_group {
+    width: 8.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    padding-left: .2rem;
+    font-size: .9rem;
+    font-weight: bolder;
 }
 
 .heading {
@@ -21,17 +32,13 @@
 }
 
 .close {
-    margin-left: -15rem;
+    margin-left: -13rem;
 }
 
 .SideIcons {
-    height: calc(100vh - 4.3rem);
-    position: fixed;
-    top: 4.3rem;
-    left: 0;
-    background: #fff;
-    width: 3.5rem;
-    z-index: 50;
+    margin-left: 0;
+    font-size: 1.7rem;
+    visibility: hidden;
 }
 
 
@@ -39,11 +46,27 @@
     .Sidenav {
         position: static;
         height: 100vh;
-        padding-left: 3.5rem;
-        padding-top: 4.3rem
+        padding-top: 4.3rem;
+        padding-left: 4.2rem
+    }
+
+    .SideIcons {
+        padding-top: 4.3rem;
+    }
+
+    .SideIcons {
+        visibility: visible;
+    }
+
+    .list_group {
+        padding-left: 0;
+    }
+
+    .open {
+        margin-left: -8.7rem;
     }
 
     .close {
-        margin-left: -10.5rem
+        margin-left: 0;
     }
 }
