@@ -21,6 +21,7 @@ const sidenav = props => {
                 <SideNavItems>Admin Dashboard</SideNavItems>
                 <SideNavItems>farm account</SideNavItems>
                 <SideNavItems>factory account</SideNavItems>
+                <SideNavItems>branch account</SideNavItems>
                 <SideNavItems> add  new  users </SideNavItems>
                 <SideNavItems>products list</SideNavItems>
                 <SideNavItems>all reports</SideNavItems>
@@ -28,10 +29,14 @@ const sidenav = props => {
             </div>
             <div className={classes.SideIcons}>
                 <div className={" list-group list-group-flush"}>
-                    <SideIcon>dashboard</SideIcon>
-                    <SideIcon>face</SideIcon>
-                    <SideIcon>supervisor_account</SideIcon>
-                    <SideIcon>settings</SideIcon>
+                    <SideIcon class="material-icons">dashboard</SideIcon>
+                    <SideIcon class="fa fa-dog"></SideIcon>
+                    <SideIcon class="material-icons">group_work</SideIcon>
+                    <SideIcon class="fa fa-code-branch"></SideIcon>
+                    <SideIcon class="material-icons">supervisor_account</SideIcon>
+                    <SideIcon class="material-icons">list</SideIcon>
+                    <SideIcon class="material-icons">library_books</SideIcon>
+                    <SideIcon class="material-icons">account_circle</SideIcon>
                 </div>
             </div>
         </div>

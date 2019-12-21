@@ -6,7 +6,7 @@ class Dashboard extends Component {
 
     render() {
         return (
-            <div className={classes.Dashboard + ' container-fluid'}>
+            <div className={classes.Dashboard + ' container-fluid py-4 text-center text-capitalize'}>
                 <div className="row">
                     <Card
                         header="expenditure"
@@ -23,13 +23,13 @@ class Dashboard extends Component {
                     <Card
                         header="expenditure"
                         body="$12.99"
-                        icon="computer"
+                        icon="dashboard"
                         footer="expenditure account"
                     />
                     <Card
                         header="expenditure"
                         body="$12.99"
-                        icon="computer"
+                        icon="shop"
                         footer="expenditure account"
                     />
                     <Card
