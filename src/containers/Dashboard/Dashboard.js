@@ -9,19 +9,19 @@ class Dashboard extends Component {
             <div className={classes.Dashboard + ' container-fluid py-4 text-center text-capitalize'}>
                 <div className="row">
                     <Card
-                        header="expenditure"
+                        header="total expenditure"
                         body="$12.99"
                         icon="computer"
-                        footer="expenditure account"
+                        footer="expenditure report"
                     />
                     <Card
-                        header="expenditure"
-                        body="$12.99"
+                        header="total income"
+                        body="$1200.99"
                         icon="phone"
-                        footer="factory account"
+                        footer="income report"
                     />
                     <Card
-                        header="expenditure"
+                        header="total farm stock"
                         body="$12.99"
                         icon="dashboard"
                         footer="expenditure account"
@@ -35,13 +35,13 @@ class Dashboard extends Component {
                     <Card
                         header="expenditure"
                         body="$12.99"
-                        icon="computer"
+                        icon="account_balance_wallet "
                         footer="expenditure account"
                     />
                     <Card
                         header="expenditure"
                         body="$12.99"
-                        icon="computer"
+                        icon="account_balance"
                         footer="expenditure account"
                     />
                     <Card

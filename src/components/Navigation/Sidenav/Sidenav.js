@@ -18,14 +18,14 @@ const sidenav = props => {
     return (
         <div className={setClass}>
             <div className={classes.list_group + " list-group list-group-flush text-uppercase"}>
-                <SideNavItems>Admin Dashboard</SideNavItems>
-                <SideNavItems>farm account</SideNavItems>
-                <SideNavItems>factory account</SideNavItems>
-                <SideNavItems>branch account</SideNavItems>
-                <SideNavItems> add  new  users </SideNavItems>
-                <SideNavItems>products list</SideNavItems>
-                <SideNavItems>all reports</SideNavItems>
-                <SideNavItems>logout</SideNavItems>
+                <SideNavItems link="dashboard">Admin Dashboard</SideNavItems>
+                <SideNavItems link="farm-account">farm account</SideNavItems>
+                <SideNavItems link="factory account">factory account</SideNavItems>
+                <SideNavItems link="spreadsheet">branch account</SideNavItems>
+                <SideNavItems link="logout"> add  new  users </SideNavItems>
+                <SideNavItems link="logout">products list</SideNavItems>
+                <SideNavItems link="logout">all reports</SideNavItems>
+                <SideNavItems link="logout">logout</SideNavItems>
             </div>
             <div className={classes.SideIcons}>
                 <div className={" list-group list-group-flush"}>
