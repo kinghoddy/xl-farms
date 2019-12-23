@@ -1,11 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import classes from './sidenavitems.css'
 
 const sidenavitems = props => (
-    <a href={"/" + props.link}
-        className={" list-group-item list-group-item-action " + classes.list_group_item}  >
+    <NavLink to={"/" + props.link}
+        className={" list-group-item list-group-item-action " + classes.list_group_item}
+        activeClassName={classes.active} >
         {props.children}
-    </a>
+    </NavLink>
 )
 
 export default sidenavitems

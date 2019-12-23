@@ -9,8 +9,8 @@ const card = props => (
                 <p className={"m-0 " + classes.cash}>{props.body}</p>
                 <i className={classes.card_icon + " material-icons"}>{props.icon}</i>
             </div>
-            <div class="card-footer bg-white ">
-                <a href="#spreadsheet" class=" btn px-3 btn-dark">{props.footer}</a>
+            <div className="card-footer bg-white ">
+                <a href="#spreadsheet" className=" btn px-3 btn-dark">{props.footer}</a>
             </div>
         </div>
     </div>
