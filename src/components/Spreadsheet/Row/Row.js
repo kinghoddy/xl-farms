@@ -1,33 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classes from './Row.css';
 
 
 
-const Row = props => {
-    
-    let Options = []
-    for (var i = 0; i < 50; i ++){
-        let newOption = <option key={i}> {i} </option>
-            Options.push(newOption)
+class Row extends Component {
+    state = {
+        total : 0
     }
+    changedHandler = (e)=>{
+     
+        this.setState({
+            total : +this.state.total + +e.target.value
+        });
+        this.props.changed(e.target.value)
+    }
+    render(){
+    let Options = []
+        for (var i = 0; i < 50; i ++){
+            let newOption = <option value={i} key={i}>{i}</option>
+                Options.push(newOption)
+        }
+        
     return (
         <tr>
-        <td>{props.sn}</td>
-        <td className={classes.td}> {props.products} </td>
+        <td>{this.props.sn}</td>
+        <td className={classes.td}> {this.props.products} </td>
         <td>
-            <select className="opening">
+            <select className="opening" onChange={this.changedHandler}>
          {Options}               
             </select>
         </td>
         <td>
-            <select className="received">
+            <select className="received" onChange={this.changedHandler}>
          {Options}               
             </select>
         </td>
-        <td ><input className="total" type="number" disabled/></td>
+        <td ><input className="total" type="number" value={this.state.total} disabled/>
+        </td>
         <td>
             <input className="salesPrice" type="number" placeholder="0"/>
-        </td>
+        </td> 
         <td>
             <select className="salesQuantity">
             {Options}            
@@ -86,5 +98,5 @@ const Row = props => {
     )
 
 }
-
+}
 export default Row;

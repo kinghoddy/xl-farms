@@ -25,14 +25,14 @@ const sidenav = props => {
             <div className={backdrop} onClick={props.clicked}></div>
             <div className={setClass}>
                 <div className={classes.list_group + " list-group list-group-flush text-uppercase"}>
-                    <SideNavItems link="dashboard">Admin Dashboard</SideNavItems>
-                    <SideNavItems link="farm-account">farm account</SideNavItems>
-                    <SideNavItems link="factory account">factory account</SideNavItems>
-                    <SideNavItems link="spreadsheet">branch account</SideNavItems>
-                    <SideNavItems link="logout"> add  new  users </SideNavItems>
-                    <SideNavItems link="logout">products list</SideNavItems>
-                    <SideNavItems link="logout">all reports</SideNavItems>
-                    <SideNavItems link="logout">logout</SideNavItems>
+                    <SideNavItems clicked={props.close} link="dashboard">Admin Dashboard</SideNavItems>
+                    <SideNavItems clicked={props.close} link="farm-account">farm account</SideNavItems>
+                    <SideNavItems clicked={props.close} link="factory account">factory account</SideNavItems>
+                    <SideNavItems clicked={props.close} link="spreadsheet">branch account</SideNavItems>
+                    <SideNavItems clicked={props.close} link="logout"> add  new  users </SideNavItems>
+                    <SideNavItems clicked={props.close} link="logout">products list</SideNavItems>
+                    <SideNavItems clicked={props.close} link="logout">all reports</SideNavItems>
+                    <SideNavItems clicked={props.close} link="logout">logout</SideNavItems>
                 </div>
                 <div className={classes.SideIcons}>
                     <div className={" list-group list-group-flush"}>

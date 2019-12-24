@@ -10,10 +10,19 @@ class Layout extends Component {
         showSideNav: true
     }
     toggleSideNav = () => {
+        
         this.setState({
             showSideNav: !this.state.showSideNav
         })
 
+    }
+    closeSideNav = () => {
+        if (window.innerWidth < 1030){
+            this.setState({
+                showSideNav: true
+            })
+        }else console.log('big');
+        
     }
 
     render() {
@@ -26,6 +35,7 @@ class Layout extends Component {
                     <Sidenav
                         open={this.state.showSideNav}
                         clicked={this.toggleSideNav}
+                        close = {this.closeSideNav}
                     />
                     <main className={classes.Content}>
                         {this.props.children}
