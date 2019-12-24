@@ -1,4 +1,6 @@
-.Spreadsheet {}
+.Spreadsheet {
+    background: rgb(255, 255, 255);
+}
 
 .Spreadsheet table,
 .Spreadsheet th,

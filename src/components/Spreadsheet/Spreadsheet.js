@@ -1,15 +1,31 @@
 import React, { Component } from 'react';
 import classes from './Spreadsheet.css';
 
-function date() {
-    var dateDom = document.getElementById('date');
-    var date = new Date();
-    var month = date.getMonth() + 1;
-    var day = date.getDate();
-    var year = date.getFullYear();
-    return `${day} - ${month} - ${year}`
-}
+import Row from './Row/Row';
+import productJson from '../../assets/products.json';
+
+
+//  creating multiple rows
+let Rows = [];
+let newRow;
+productJson.product.forEach((cur,i) => {
+    newRow = <Row products = {cur} sn ={i + 1} key={i} />
+    Rows.push(newRow)
+});
+
+
 class Spreadsheet extends Component {
+   
+    date = ()=> {
+        var date = new Date();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var year = date.getFullYear();
+        return `${day} - ${month} - ${year}`
+    }
+    products = ()=>{
+
+    }
     render() {
         return (
             <div className={classes.Spreadsheet}>
@@ -17,7 +33,7 @@ class Spreadsheet extends Component {
                     <div className="container text-white">
                         <a href="#dashboard" className="btn btn-outline-light"><i className="fa fa-angle-left"></i> Previous</a>
                         <p className=" mb-0 text-uppercase">
-                            <span className="h5 font-weight-bold">New Report </span><span id="date" className="h5 mx-3">{date()}</span>
+                            <span className="h5 font-weight-bold">New Report </span><span id="date" className="h5 mx-3">{this.date()}</span>
                         </p>
 
                         <a href="#summary" className="btn btn-outline-light">Next <i className="fa fa-angle-right"></i></a>
@@ -25,23 +41,23 @@ class Spreadsheet extends Component {
                 </nav>
                 <div className="container-fluid ">
                     <div className="table-responsive ">
-                        <table className="table table-bordered table-condensed table-hover">
+                        <table className="table table-striped table-bordered table-condensed table-hover">
                             <thead>
                                 <tr>
-                                    <th rowspan="2">S/N</th>
-                                    <th rowspan="2">PRODUCT</th>
-                                    <th rowspan="2">Opening</th>
-                                    <th rowspan="2">Received</th>
-                                    <th rowspan="2">Total</th>
-                                    <th colspan="2">Sales</th>
-                                    <th rowspan="2">Induction</th>
-                                    <th colspan="2">Unilevel</th>
-                                    <th rowspan="2">Stepout</th>
-                                    <th colspan="2">Superdealers</th>
-                                    <th rowspan="2">Bonus</th>
-                                    <th rowspan="2">Food Salary</th>
-                                    <th colspan="2">Ember</th>
-                                    <th rowspan="2">Closing</th>
+                                    <th rowSpan="2">S/N</th>
+                                    <th rowSpan="2">PRODUCT</th>
+                                    <th rowSpan="2">Opening</th>
+                                    <th rowSpan="2">Received</th>
+                                    <th rowSpan="2">Total</th>
+                                    <th colSpan="2">Sales</th>
+                                    <th rowSpan="2">Induction</th>
+                                    <th colSpan="2">Unilevel</th>
+                                    <th rowSpan="2">Stepout</th>
+                                    <th colSpan="2">Superdealers</th>
+                                    <th rowSpan="2">Bonus</th>
+                                    <th rowSpan="2">Food Salary</th>
+                                    <th colSpan="2">Ember</th>
+                                    <th rowSpan="2">Closing</th>
                                 </tr>
                                 <tr>
                                     <th>Price</th>
@@ -54,7 +70,9 @@ class Spreadsheet extends Component {
                                     <th>Quantity</th>
                                 </tr>
                             </thead>
-                            <tbody id="tbody" className="wow fadeInUp "></tbody>
+                            <tbody id="tbody" className="wow fadeInUp ">
+                            {Rows.map((cur, i)=> cur)}
+                            </tbody>
                             <tfoot id="tfoot" className=" bg-light">
                                 <tr>
                                     <td></td>
