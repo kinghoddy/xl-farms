@@ -14,8 +14,7 @@
     font-size: 2rem !important;
 }
 
-.active,
-.list_group_item:hover {
+.active {
     background: #000;
     border: 0;
     color: orange;

@@ -29,14 +29,14 @@ const sidenav = props => {
             </div>
             <div className={classes.SideIcons}>
                 <div className={" list-group list-group-flush"}>
-                    <SideIcon class="material-icons">dashboard</SideIcon>
-                    <SideIcon class="fa fa-dog"></SideIcon>
-                    <SideIcon class="material-icons">group_work</SideIcon>
-                    <SideIcon class="fa fa-code-branch"></SideIcon>
-                    <SideIcon class="material-icons">supervisor_account</SideIcon>
-                    <SideIcon class="material-icons">list</SideIcon>
-                    <SideIcon class="material-icons">library_books</SideIcon>
-                    <SideIcon class="material-icons">account_circle</SideIcon>
+                    <SideIcon link="dashboard" class="material-icons">dashboard</SideIcon>
+                    <SideIcon link="farm-account" class="fa fa-dog"></SideIcon>
+                    <SideIcon link="factory-account" class="material-icons">group_work</SideIcon>
+                    <SideIcon link="spreadsheet" class="fa fa-code-branch"></SideIcon>
+                    <SideIcon link="supervisor-account" class="material-icons">supervisor_account</SideIcon>
+                    <SideIcon link="list" class="material-icons">list</SideIcon>
+                    <SideIcon link="reports" class="material-icons">library_books</SideIcon>
+                    <SideIcon link="logout" class="material-icons">account_circle</SideIcon>
                 </div>
             </div>
         </div>
