@@ -5,8 +5,7 @@
     align-items: center;
 }
 
-.active,
-.list_group_item:hover {
+.active {
     background: #222 !important;
     border: 0 !important;
     color: white !important;
