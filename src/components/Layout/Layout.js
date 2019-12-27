@@ -25,6 +25,7 @@ class Layout extends Component {
                 <div className={classes.wrapper}>
                     <Sidenav
                         open={this.state.showSideNav}
+                        clicked={this.toggleSideNav}
                     />
                     <main className={classes.Content}>
                         {this.props.children}

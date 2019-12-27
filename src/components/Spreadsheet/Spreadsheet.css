@@ -1,0 +1,25 @@
+.Spreadsheet table,
+.Spreadsheet th,
+.Spreadsheet tfoot,
+.Spreadsheet td {
+    padding: 0 !important;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.Spreadsheet th,
+.Spreadsheet tfoot,
+.Spreadsheet td {
+    padding: 0.5rem 0.3rem !important;
+}
+
+.Spreadsheet input,
+.Spreadsheet select {
+    width: 3rem;
+    border: none;
+    background: none;
+}
+
+.Spreadsheet tfoot * {
+    /* font-size: 1.2rem */
+}
