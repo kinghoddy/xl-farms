@@ -1,3 +1,5 @@
+.Spreadsheet {}
+
 .Spreadsheet table,
 .Spreadsheet th,
 .Spreadsheet tfoot,
@@ -21,5 +23,5 @@
 }
 
 .Spreadsheet tfoot * {
-    /* font-size: 1.2rem */
+    font-size: 1.2rem
 }

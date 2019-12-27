@@ -13,7 +13,7 @@ class Spreadsheet extends Component {
     render() {
         return (
             <div className={classes.Spreadsheet}>
-                <nav className="spreadsheet navbar  bg-dark  navbar-dark">
+                <nav className=" navbar  bg-dark  navbar-dark">
                     <div className="container text-white">
                         <a href="#dashboard" className="btn btn-outline-light"><i className="fa fa-angle-left"></i> Previous</a>
                         <p className=" mb-0 text-uppercase">
